@@ -1,4 +1,4 @@
-IMAGE_REPO=fairbytes.azurecr.io/manual-approval
+IMAGE_REPO=ghcr.io/jonasmock/manual-approval
 
 .PHONY: build
 build:

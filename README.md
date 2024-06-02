@@ -121,7 +121,7 @@ To test out your code in an action, you need to build the image and push it to a
 Build the image:
 
 ```
-$ VERSION=1.7.1-rc.1 make IMAGE_REPO=fairbytes.azurecr.io/manual-approval-test build
+$ VERSION=1.7.1-rc.1 make IMAGE_REPO=ghcr.io/jonasmock/manual-approval-test build
 ```
 
 *Note: The image version can be whatever you want, as this image wouldn't be pushed to production. It is only for testing.*
@@ -129,13 +129,13 @@ $ VERSION=1.7.1-rc.1 make IMAGE_REPO=fairbytes.azurecr.io/manual-approval-test b
 Push the image to your container registry:
 
 ```
-$ VERSION=1.7.1-rc.1 make IMAGE_REPO=fairbytes.azurecr.io/manual-approval-test push
+$ VERSION=1.7.1-rc.1 make IMAGE_REPO=ghcr.io/jonasmock/manual-approval-test push
 ```
 
 To test out the image you will need to modify `action.yaml` so that it points to your new image that you're testing:
 
 ```yaml
-  image: docker://fairbytes.azurecr.io/manual-approval-test:1.7.0-rc.1
+  image: docker://ghcr.io/jonasmock/manual-approval-test:1.7.0-rc.1
 ```
 
 Then to test out the image, run a workflow specifying your dev branch:
