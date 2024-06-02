@@ -30,4 +30,4 @@ inputs:
     default: ""
 runs:
   using: docker
-  image: docker://fairbytes.azurecr.io/manual-approval:1.9.0
+  image: docker://fairbytes.azurecr.io/manual-approval:1.0.0
